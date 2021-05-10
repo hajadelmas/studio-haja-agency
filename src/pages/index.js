@@ -121,7 +121,7 @@ export default function IndexPage() {
         trigger: '#brandAnimation',
         scrub: true,
         pin: '.svgContainer',
-        markers: true,
+        // markers: true,
         // pinSpacing: false,
         // markers: true,
         start: 'top top',
