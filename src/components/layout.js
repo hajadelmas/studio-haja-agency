@@ -13,7 +13,7 @@ import CircleLogo from './CircleLogo'
 import gsap from 'gsap'
 import { CursorProvider } from 'react-cursor-custom'
 
-import Header from './Header'
+import Header from './header'
 import "./layout.scss"
 import circletypeMin from "circletype"
 import Footer from "./Footer"
