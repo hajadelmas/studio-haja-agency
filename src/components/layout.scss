@@ -1,0 +1,28 @@
+@import '../styles/typography.scss';
+
+*, ::after, ::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  font-family: "SF-Pro";
+}
+
+.logoInCircle {
+  height: 50px;
+  width: 50px;
+}
+
+.cercle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999999999;
+  height: 100vh;
+  width: 100%;
+  background-color: $primary-color;
+  clip-path: circle(3000px);
+}

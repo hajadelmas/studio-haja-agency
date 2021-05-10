@@ -1,3 +1,6 @@
+const autoprefixer = require('autoprefixer');
+const browserslist = require('browserslist');
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -17,6 +20,14 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
+      resolve: 'gatsby-plugin-sass',
+      options: {
+        postCssPlugins: [
+          autoprefixer({ Browserslist: browserslist() }),
+        ],
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-default`,
@@ -26,6 +37,15 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+      },
+      
+    },
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /\.inline\.svg$/,
+        },
       },
     },
     `gatsby-plugin-gatsby-cloud`,

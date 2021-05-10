@@ -1,0 +1,124 @@
+.PageIndex {
+  margin-top: -80px;
+  height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.text_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+
+.textHome {
+    
+    // width: 70%;
+    // display: flex;
+    // align-items: center;
+
+    h1 {
+        position: relative;
+        color: #FAC1C1;
+        font-family: "SF-Pro";
+        font-size: clamp(3.5rem, 6vw, 5rem);
+        font-weight: bold;
+        padding-left: 5vw;
+        overflow: hidden;
+    }
+
+    h1 .box {
+      position: absolute;
+      bottom: 0;
+      display: inline-block;
+      background: #27345C;
+      height: 0.3vw;
+      z-index: -1;
+    }
+
+    h1 .hi {
+      display: inline-block;
+    }
+
+    .cursor {
+      color: #27345C;
+    }
+
+    @media screen and (max-width: 500px) {
+      width: 80%;
+    }
+
+}
+
+.textApres {
+
+  h1 {
+    position: relative;
+    color: #FAC1C1;
+    font-family: "SF-Pro";
+    font-size: clamp(3.5rem, 6vw, 5rem);
+    font-weight: bold;
+    padding-left: 5vw;
+    overflow: hidden;
+  }
+
+  h1 .box {
+    position: absolute;
+    bottom: 0;
+    display: inline-block;
+    background: #27345C;
+    height: 0.3vw;
+    z-index: -1;
+  }
+
+  h1 .hi {
+    display: inline-block;
+  }
+
+  .cursor {
+    color: #27345C;
+  }
+}
+
+#Calque_1 {
+  position: absolute;
+  z-index: 99;
+  top: 40px;
+  left: 0;
+  height: 90vh;
+  width: 100%;
+  stroke: transparent;
+  color: white;
+}
+
+.paperplane {
+  position: absolute;
+  height: 30px;
+  top: 0;
+  overflow-x: hidden;
+}
+
+
+
+.section2 {
+  height: 500vh;
+  background-color: #FAC1C1;
+}
+
+
+
+
+
+
+@media screen and (max-width:767px) {
+  h1 {
+    font-size: 14.3vw;
+  }
+
+  h1 .box {
+    display: none;
+  }
+
+}
